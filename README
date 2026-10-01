@@ -1,0 +1,74 @@
+
+# 🎒 PacksLight — Turn Dreams into Daily Action
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter)](https://flutter.dev)
+[![RevenueCat](https://img.shields.io/badge/RevenueCat-In--App%20Purchases-E75243)](https://www.revenuecat.com)
+[![Google Play](https://img.shields.io/badge/Google%20Play-Live-brightgreen)](https://play.google.com/store/apps/details?id=com.portablecooking.packslight)
+
+> **Official Store Listing**: [Download on Google Play](https://play.google.com/store/apps/details?id=com.portablecooking.packslight)  
+> **Built for RevenueCat Shipaton 2026** | Targeting: **Influencer Award — Yoga & Fitness (Simone Sharice)** & **RevenueCat Design Award**
+
+---
+
+## 📌 Overview
+Big bucket-list dreams often die from decision fatigue and overwhelm. **PacksLight** eliminates goal paralysis by answering the daily question *"What should I do today?"*—distilling long-term travel, career, and wellness goals into one achievable daily micro-action backed by habit streaks and celebratory confetti wins.
+
+---
+
+## 🚀 Key Features
+* **AI Dream Action Plans**: Deconstructs ambitious dreams into step-by-step micro-actions with realistic target deadlines.
+* **Daily Micro-Action Focus**: Replaces endless to-do lists with one single task per day.
+* **Streak Fire & Wins Journal**: Log daily accomplishments with confetti animations and weekly activity bar charts.
+* **Curated Community Challenges**: Multi-day guided challenges across personal growth and fitness.
+* **Dual RevenueCat Monetization**: Tiered monthly subscriptions (Pro $25/mo, Premium $35/mo) and Action Credit top-ups.
+
+---
+
+## 💳 Judge Reviewer Credentials & Promo Codes
+* **Reviewer Account**: `reviewer@packslight.app` / `Reviewer123!`
+* **Google Play / RevenueCat Promo Codes**:
+  * 👑 **Premium Subscription**: `PACKLIGHTFREE`
+  * ⚡ **10 Action Credit Pack**: `E7RD75PTPHXARCV5TWTG8X2`
+
+---
+
+## 🛠 Tech Stack & Architecture
+* **Frontend**: Flutter / Dart with `confetti`, `fl_chart`, and custom gradient themes
+* **Monetization Engine**: RevenueCat SDK (`purchases_flutter`)
+* **Backend API**: Python REST API on Azure Web Apps (`https://packslight-eefpgge5hdh9befs.eastus-01.azurewebsites.net`)
+* **AI Model**: Gemini 3 Flash structured roadmap generators
+
+---
+
+## 📂 Project Structure
+```text
+packlight/
+├── android/               # Native Android configuration
+├── ios/                   # Native iOS configuration
+├── lib/
+│   ├── main.dart          # Entry point, streak checker, RevenueCat setup
+│   ├── models/            # Dream, MicroAction, Challenge, Win, UserSession
+│   ├── services/          # ApiService (Dream plan generation, challenges, Azure backend)
+│   └── screens/           # HomeScreen, DreamsScreen, ChallengesScreen, TrackScreen, UpgradeScreen
+├── azure_pack/            # Azure cloud services
+│   ├── app.py             # REST API
+│   ├── packslight.db      # SQLite database
+│   └── requirements.txt   # Dependencies
+└── pubspec.yaml           # Flutter dependencies
+```
+
+---
+
+## ⚙️ Getting Started
+```bash
+git clone https://github.com/Jerryblessed/packslight.git
+cd packslight
+flutter pub get
+flutter run
+```
+
+---
+
+## 📄 License
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
